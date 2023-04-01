@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './assets/LoginPage.css'
 
-function LoginPage() {
+const LoginPage = () =>  {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -20,7 +20,7 @@ function LoginPage() {
 
   return (
     <div>
-      <h1>Login Page</h1>
+      <h1>User Authentication Page</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Username:
