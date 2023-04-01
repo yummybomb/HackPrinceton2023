@@ -7,7 +7,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 openai.Model.list()
 
 def generateActivity():
-    prompt = """Generate a random activity that assists sustainability for communities users on our app. 
+    prompt = """Generate a ecofriendly activity that assists sustainability for the environment. Think very abstractly, do not write about composting or anything related to composting. 
     An example is shown how to format the task below: 
     Example:
     "Activity: Plant a tree
@@ -24,9 +24,10 @@ def generateActivity():
     "Activity: Organize a neighborhood clean-up day
 
     Description: Organize a neighborhood clean-up day where you and your neighbors go around your community and pick up litter and other debris. This can help prevent trash from ending up in local waterways or natural habitats, and keep your neighborhood looking clean and attractive."
+    do not write about composting or anything related to composting. 
     """
 
-    response = openai.Completion.create(model="text-davinci-003", prompt= prompt, temperature=0.6, max_tokens=1500)
+    response = openai.Completion.create(model="text-davinci-003", prompt= prompt, temperature=0.9, max_tokens=1500)
     string = response.choices[0].text 
 
     return string
