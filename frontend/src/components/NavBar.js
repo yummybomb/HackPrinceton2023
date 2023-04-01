@@ -1,4 +1,4 @@
-import '.assets/NavBar.css';
+import './assets/NavBar.css';
 import React from 'react';
 import logo from './assets/logo.png';
 
