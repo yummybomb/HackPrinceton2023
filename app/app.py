@@ -5,6 +5,8 @@ from app.db import User, db
 from app.schemas import UserCreate, UserRead, UserUpdate
 from app.users import auth_backend, current_active_user, fastapi_users
 
+from activityRandomizer import generateActivity
+
 app = FastAPI()
 
 app.include_router(
@@ -35,6 +37,12 @@ app.include_router(
 @app.get("/authenticated-route")
 async def authenticated_route(user: User = Depends(current_active_user)):
     return {"message": f"Hello {user.email}!"}
+
+@app.get("/get-activity")
+async def get_activity():
+    return generateActivity()
+    
+
 
 
 @app.on_event("startup")
