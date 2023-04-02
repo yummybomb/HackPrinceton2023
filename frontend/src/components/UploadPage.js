@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import NavBar from './NavBar';
 
 const UploadPage = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -14,6 +15,7 @@ const UploadPage = () => {
 
   return (
     <div>
+        <NavBar/>
         <input type="file" onChange={changeHandler} />
         <button onClick={handleImageUpload}>Upload Image</button>
     </div>
