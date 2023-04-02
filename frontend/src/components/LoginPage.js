@@ -2,10 +2,14 @@ import React, { useState, setError } from 'react';
 import './assets/LoginPage.css'
 import ImageScroll from './ImageScroll'
 import axios from 'axios';
+import { useNavigate  } from 'react-router-dom';
+
 
 const LoginPage = () =>  {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const navigate = useNavigate();
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -30,6 +34,7 @@ const LoginPage = () =>  {
         },
         )
         alert('Login successful');
+        navigate('/generate');
       } catch (err) {
         alert('Login failed');
         setError(err.response.data.error);
