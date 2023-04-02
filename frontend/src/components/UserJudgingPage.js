@@ -1,9 +1,12 @@
 import React from 'react'
 import VoteButtons from './VoteButtons'
+import NavBar from './NavBar'
 
 const UserJudgingPage = () => {
-  return (
+  return ( 
+    
     <div>
+        <NavBar/>
         <VoteButtons/>
     </div>
   )
