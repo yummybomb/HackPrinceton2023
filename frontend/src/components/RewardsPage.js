@@ -9,6 +9,7 @@ const RewardsPage = () => {
   const [address, setAddress] = useState('');
   const [isSending, setIsSending] = useState(false);
   const isMounted = useRef(true);
+  const [count] = useState(10)
 
   const handleAddressChange = (event) => {
     setAddress(event.target.value);
@@ -20,7 +21,6 @@ const RewardsPage = () => {
 
       setIsSending(true);
 
-      
       await axios.post("http://localhost:8000/quick-mint", address).then((output) => {
       console.log(output.data);
       setData(output.data);}).catch((error) => {
@@ -40,6 +40,10 @@ const RewardsPage = () => {
         <div className="center"> 
             <input className = "wallet" type="text" placeholder= "Blockchain Wallet Address" value={address} onChange={handleAddressChange}></input>
             <button className ="mint-button" onClick={quickMint}>Mint!</button>
+        </div>
+
+        <div>
+          <h1>Tokens left: {count}</h1>
         </div>
     </div>
   )
