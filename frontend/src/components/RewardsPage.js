@@ -7,7 +7,12 @@ const RewardsPage = () => {
   return (
     <div>
         <NavBar></NavBar>
-        <img src={treeNFT}/>
+        <div class = "nft">
+            <img src={treeNFT}/>
+        </div>
+        <div class="center">
+            <button class="mint-button">Mint!</button>
+        </div>
     </div>
   )
 }
