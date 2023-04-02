@@ -51,12 +51,12 @@ const LoginPage = () =>  {
       <ImageScroll/>
       <form>
         <label>
-          Email:
+          <h1>Email:</h1>
           <input type="text" placeholder="Email" value={email} onChange={handleEmailChange} />
         </label>
         <br />
         <label>
-          Password:
+          <h1>Password:</h1>
           <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
         </label>
         <br />

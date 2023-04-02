@@ -11,7 +11,7 @@ const NavBar = () => {
                 <li><a href = "/">LOGIN</a></li>
                 <li><a href = "/dashboard">DASHBOARD</a></li>
                 <li><a href = "/generate">GENERATE</a></li>
-                <li><a href = "/completions">COMPLETIONS</a></li>
+                <li><a href = "/completions">REWARDS</a></li>
             </ul>
         </div>
     </nav>

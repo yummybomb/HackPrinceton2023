@@ -1,15 +1,18 @@
-
-
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    right: 10%;
+    right: 20%;
     bottom: 10%;
     padding: 45px;
     padding-bottom: 300px;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+    box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
+    -moz-box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
+    -o-box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
+    border: 12px solid rgba(0, 0, 0, 0.986);
     background-color: rgb(255, 255, 255);
   }
   
@@ -41,9 +44,9 @@ form {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+     box-shadow:inset 2px 2px 2px 0px rgba(218, 218, 218, 0.5),
+     7px 7px 20px 0px rgba(0, 0, 0, 0.142),
+     4px 4px 5px 0px rgba(0, 0, 0, 0.256);
     outline: none;
     border: none;
   }
@@ -79,10 +82,9 @@ form {
     top: 2px;
   }
 
-
-  
   h1 {
     font-weight: none;
-    text-align: center;
+    text-align: left;
+    font-size: medium;
   }
   
