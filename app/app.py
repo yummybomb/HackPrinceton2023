@@ -1,13 +1,14 @@
 from beanie import init_beanie
-from fastapi import Depends, FastAPI
+from fastapi import Depends, FastAPI, Body
 
 from app.db import User, db
 from app.schemas import UserCreate, UserRead, UserUpdate
 from app.users import auth_backend, current_active_user, fastapi_users
+from app.activityRandomizer import generateActivity
+from app.quickMint import quickMint
 
 from fastapi.middleware.cors import CORSMiddleware
 
-from activityRandomizer import generateActivity
 
 
 app = FastAPI()
@@ -54,6 +55,10 @@ async def authenticated_route(user: User = Depends(current_active_user)):
 @app.get("/get-activity")
 async def get_activity():
     return generateActivity()
+
+@app.post("/quick-mint")
+async def fast_mint(address: str = Body(..., embed=True)):
+    return quickMint(address)
     
 
 

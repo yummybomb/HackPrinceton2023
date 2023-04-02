@@ -55,6 +55,13 @@ const LoginPage = () =>  {
 
   return (
     <div>
+    <div id='stripes'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
       <ImageScroll/>
       <form>
         <label>
@@ -67,9 +74,10 @@ const LoginPage = () =>  {
           <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
         </label>
         <br />
-        <button onClick = {handleLogin}>LOGIN</button>
-        <button onClick = {handleRegister}>REGISTER</button>
+        <button class = "loginButton" onClick = {handleLogin}>LOGIN</button>
+        <button class = "loginButton" onClick = {handleRegister}>REGISTER</button>
       </form>
+      
     </div>
   )
 }
