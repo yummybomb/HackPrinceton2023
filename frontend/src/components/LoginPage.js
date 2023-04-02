@@ -31,6 +31,7 @@ const LoginPage = () =>  {
         )
         alert('Login successful');
       } catch (err) {
+        alert('Login failed');
         setError(err.response.data.error);
       }
     }
@@ -42,6 +43,7 @@ const LoginPage = () =>  {
       await axios.post('http://localhost:8000/auth/register', { "email" : email, "password" : password});
       alert('User registered successfully');
     } catch (err) {
+        alert('User registered failed');
       setError(err.response.data.error);
     }
   }
