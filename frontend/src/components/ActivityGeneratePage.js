@@ -2,6 +2,7 @@ import React, {useState, useCallback, useRef} from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
 import './assets/ActivityGenerator.css';
+import logo from './assets/loading.gif';
 
 const ActivityGeneratePage = () => {
     const [data, setData] = useState([]);
@@ -16,7 +17,8 @@ const ActivityGeneratePage = () => {
 
         setIsSending(true);
         
-        await axios.get("http://localhost:8000/get-activity").then((output) => {console.log(output.data);
+        await axios.get("http://localhost:8000/get-activity").then((output) => {
+        console.log(output.data);
         setData(output.data);}).catch((error) => {
             console.log(error);
         });
@@ -35,6 +37,7 @@ const ActivityGeneratePage = () => {
             </div>
             <div class = "container">
                 <h2>{data.Activity}</h2>
+                <p>{isSending && <img src={logo} width = "400" height = "350" alt="loading" />}</p>
                 <p>{data.Description}</p> 
             </div>
         </div>
