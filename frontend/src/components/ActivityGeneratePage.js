@@ -30,11 +30,13 @@ const ActivityGeneratePage = () => {
     return (
         <div>
             <NavBar/>
-            <div class = "center">
+            <div class = "container1">
                 <button class = "generateButton" onClick={getActivity}>Generate Activity!</button>
             </div>
-            <h2>{data.Activity}</h2>
-            <p>{data.Description}</p>
+            <div class = "container">
+                <h2>{data.Activity}</h2>
+                <p>{data.Description}</p> 
+            </div>
         </div>
         
     
