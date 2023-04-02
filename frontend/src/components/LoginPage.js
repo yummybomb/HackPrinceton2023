@@ -21,20 +21,18 @@ const LoginPage = () =>  {
 
   return (
     <div>
-      <NavBar></NavBar>
-      <h1>User Authentication Page</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Username:
-          <input type="text" value={username} onChange={handleUsernameChange} />
+          <input type="text" placeholder="Username" value={username} onChange={handleUsernameChange} />
         </label>
         <br />
         <label>
           Password:
-          <input type="password" value={password} onChange={handlePasswordChange} />
+          <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
         </label>
         <br />
-        <button type="submit">Login</button>
+        <button type="submit">LOGIN</button>
       </form>
     </div>
   );
