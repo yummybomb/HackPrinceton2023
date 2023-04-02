@@ -8,10 +8,8 @@ form {
     padding: 45px;
     padding-bottom: 300px;
     border-radius: 25px;
-    box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
-    -moz-box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
-    -webkit-box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
-    -o-box-shadow: 10px -10px 5px rgba(0,0,0,0.8);
+    box-shadow: 10px -10px 5px rgba(0,0,0,0.2);
+
     border: 12px solid rgba(0, 0, 0, 0.986);
     background-color: rgb(255, 255, 255);
   }
