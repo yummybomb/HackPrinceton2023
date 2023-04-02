@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './assets/LoginPage.css'
-import NavBar from './NavBar'
+import ImageScroll from './ImageScroll'
 
 const LoginPage = () =>  {
   const [username, setUsername] = useState('');
@@ -21,6 +21,7 @@ const LoginPage = () =>  {
 
   return (
     <div>
+      <ImageScroll></ImageScroll>
       <form onSubmit={handleSubmit}>
         <label>
           Username:

@@ -1,0 +1,44 @@
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+  .media-scroller{
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    max-width: 22rem;
+    scroll-snap-type: x mandatory;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+  }
+
+  .media-scroller > a {
+    scroll-snap-align: center;
+  }
+
+  .media-element img{
+    max-width: 80%;
+    padding: 3rem;
+  }
