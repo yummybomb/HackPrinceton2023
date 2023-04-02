@@ -1,6 +1,7 @@
 import React, {useState, useCallback, useRef} from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
+import './assets/ActivityGenerator.css';
 
 const ActivityGeneratePage = () => {
     const [data, setData] = useState([]);
@@ -29,7 +30,9 @@ const ActivityGeneratePage = () => {
     return (
         <div>
             <NavBar/>
-            <button onClick={getActivity}>Generate Activity!</button>
+            <div class = "center">
+                <button class = "generateButton" onClick={getActivity}>Generate Activity!</button>
+            </div>
             <h2>{data.Activity}</h2>
             <p>{data.Description}</p>
         </div>
