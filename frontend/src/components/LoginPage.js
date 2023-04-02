@@ -24,12 +24,12 @@ const LoginPage = () =>  {
       <ImageScroll></ImageScroll>
       <form onSubmit={handleSubmit}>
         <label>
-          Username:
+          <h1>Username:</h1>
           <input type="text" placeholder="Username" value={username} onChange={handleUsernameChange} />
         </label>
         <br />
         <label>
-          Password:
+          <h1>Password:</h1>
           <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
         </label>
         <br />
