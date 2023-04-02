@@ -14,19 +14,19 @@
   }
   
   .mint-button {
-    background-color: #3cb371;
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
-    box-shadow: 0px 0px 0px #3cb371;
+    box-shadow: 0px 0px 0px #4CAF50;
     border-radius: 5px;
     margin-bottom: auto;
     margin-top: 20px;
   }
   
   .mint-button:hover {
-    box-shadow: 0px 0px 20px #3cb371;
+    box-shadow: 0px 0px 20px #4CAF50;
   }

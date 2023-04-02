@@ -27,7 +27,7 @@ div.scrollmenu {
     grid-auto-columns: 100%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    max-width: 22rem;
+    max-width: 27rem;
     scroll-snap-type: x mandatory;
     position: absolute;
     left: 20%;

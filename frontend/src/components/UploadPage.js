@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import NavBar from './NavBar';
+import './assets/UploadPage.css';
 
 const UploadPage = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -16,7 +17,9 @@ const UploadPage = () => {
   return (
     <div>
         <NavBar/>
+        <div className = "upload-container">
         <input type="file" onChange={changeHandler} />
+        </div>
         <button onClick={handleImageUpload}>Upload Image</button>
     </div>
     )
