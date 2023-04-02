@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 const RewardsPage = () => {
   return (
     <div>
-        <NavBar></NavBar>
+        <NavBar/>
         <img src={treeNFT}/>
     </div>
   )
