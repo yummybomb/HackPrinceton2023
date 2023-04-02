@@ -5,7 +5,9 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 18%
+    position: absolute;
+    left: 5%;
+    width: 5%;
 }
 
 .nav-links{

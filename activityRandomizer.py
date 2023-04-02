@@ -5,7 +5,6 @@ import re
 
 load_dotenv()
 openai.api_key = os.getenv('OPENAI_API_KEY')
-openai.Model.list()
 
 def generateActivity():
     message = [{"role":"user","content": """Generate a ecofriendly activity that assists sustainability for the environment. Think very abstractly, do not write about composting or anything related to composting. 
